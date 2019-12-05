@@ -1,0 +1,72 @@
+header
+	background-image: url('../../img/bg/main_bg.jpg')
+	background-position: left top
+	background-size: cover
+	background-repeat: no-repeat 
+	background-color: rgb(43,46,74)
+.logo
+	img
+		width: 150px
+		@media(min-width:576px)
+			width: 100%
+.nav-wrapper
+	position: relative
+	padding: 20px 0 15px
+	display: flex
+	justify-content: space-between
+	border-bottom: 1px solid rgba(255,255,255,0.2)
+	background-image: linear-gradient( to top, rgba(43,46,74,0) 0%, rgb(43,46,74) 100%)
+	@media(min-width:576px)
+		padding: 35px 0 25px
+.main-nav
+	transition: 0.3s ease-in
+	list-style-type: none
+	text-transform: uppercase
+	display: none
+	li
+		font-size: 13px
+		font-weight: 600
+		margin-bottom: 20px
+		@media(min-width:768px)
+			margin-bottom: 0
+			margin-left: 25px
+		@media(min-width:1200px)
+			margin-left: 55px
+	@media(min-width:768px)
+		display: flex
+		flex-direction: row
+.header-center
+	margin: 0 auto
+	width: 91%
+	h1
+		text-transform: uppercase
+		font-family: 'Open Sans'
+		font-weight: 700
+		font-size: 5vw
+		line-height: 5vw
+		margin-top: 50px
+		margin-bottom: 20px
+		@media(min-width:576px)
+			margin-top: 100px
+			margin-bottom: 40px
+		@media(min-width:1200px)
+			font-size: 65px
+			margin-top: 200px
+	p
+		font-size: 2vw
+		line-height: 2.5vw
+		@media(min-width:992px)
+			font-size: 22px
+	button
+		margin-top: 30px
+		margin-bottom: 45px
+		@media(min-width:576px)
+			margin-top: 70px
+			margin-bottom: 85px
+		@media(min-width:992px)
+			margin-bottom: 155px
+	@media(min-width:992px)
+		// width: 800px
+	@media(min-width:1200px)
+		width: 940px
+		

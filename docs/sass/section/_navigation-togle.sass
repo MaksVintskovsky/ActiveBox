@@ -1,0 +1,96 @@
+.cmn-toggle-switch 
+  display: block
+  position: absolute
+  overflow: hidden
+  top: 10px
+  right: -5px
+  margin: 0
+  padding: 0
+  width: 45px
+  height: 45px
+  font-size: 0
+  text-indent: -9999px
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  box-shadow: none
+  border-radius: none
+  border: none
+  cursor: pointer
+  transition: background 0.3s
+  @media(min-width:576px)
+    top: 23px
+  @media(min-width:768px)
+    display: none
+      
+.cmn-toggle-switch:focus 
+  outline: none
+  
+.cmn-toggle-switch span 
+  display: block
+  position: absolute
+  top: 20px
+  left: 7px
+  right: 7px
+  height: 4px
+  background: white
+  border-radius: 1px
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after 
+  position: absolute
+  display: block
+  left: 0
+  width: 100%
+  height: 4px
+  background-color: #fff
+  content: ""
+  border-radius: 1px
+
+.cmn-toggle-switch span::before 
+  top: -10px
+
+.cmn-toggle-switch span::after 
+  bottom: -10px
+
+.cmn-toggle-switch__htx 
+  background-color: transparent
+
+.cmn-toggle-switch__htx span 
+  color: #fff
+  background-color: #fff
+  transition: background 0 0.3s
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after 
+  transition-duration: 0.1s, 0.1s
+  transition-delay: 0.3s, 0
+
+.cmn-toggle-switch__htx span::before 
+  // -webkit-transition-property: top, -webkit-transform
+  transition-property: top, transform
+
+.cmn-toggle-switch__htx span::after 
+  // -webkit-transition-property: bottom, -webkit-transform
+  transition-property: bottom, transform
+
+/* active state*/
+.cmn-toggle-switch__htx.active 
+  // background-color: #cb0032
+  background-color: transparent
+
+.cmn-toggle-switch__htx.active span 
+  background: none
+
+.cmn-toggle-switch__htx.active span::before 
+  top: 0
+  transform: rotate(45deg)
+
+.cmn-toggle-switch__htx.active span::after 
+  bottom: 0
+  transform: rotate(-45deg)
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after 
+  transition-delay: 0, 0.3s
+  
