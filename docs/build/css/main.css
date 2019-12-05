@@ -1002,6 +1002,10 @@ template {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+*:hover {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+
 body {
   min-width: 320px;
   font-family: 'Raleway', sans-serif;
@@ -1012,9 +1016,7 @@ a {
   text-decoration: none;
   color: #FFF; }
   a:hover {
-    text-decoration: none;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
+    text-decoration: none; }
 
 button {
   background-color: #e84545;
@@ -1024,10 +1026,6 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 11px; }
-  button:hover {
-    background-color: #e52e2e;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in; }
   @media (min-width: 576px) {
     button {
       font-size: 13px; } }
@@ -1081,10 +1079,12 @@ header {
     @media (min-width: 768px) {
       .main-nav li {
         margin-bottom: 0;
-        margin-left: 25px; } }
+        margin-left: 14px; } }
     @media (min-width: 1200px) {
       .main-nav li {
         margin-left: 55px; } }
+  .main-nav a {
+    padding: 5px; }
   @media (min-width: 768px) {
     .main-nav {
       display: -webkit-box;
@@ -1121,6 +1121,8 @@ header {
   .header-center button {
     margin-top: 30px;
     margin-bottom: 45px; }
+    .header-center button:hover {
+      background-color: #e52e2e; }
     @media (min-width: 576px) {
       .header-center button {
         margin-top: 70px;

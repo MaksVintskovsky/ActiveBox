@@ -1,4 +1,5 @@
-
+*:hover
+	transition: 0.2s ease-in
 body
 	min-width: 320px
 	font-family: 'Raleway', sans-serif
@@ -9,7 +10,7 @@ a
 	color: #FFF
 	&:hover
 		text-decoration: none
-		transition: 0.2s ease-in	
+		// transition: 0.2s ease-in	
 button
 	background-color: $red
 	border-radius: 1px
@@ -18,9 +19,6 @@ button
 	text-transform: uppercase
 	font-weight: 600
 	font-size: 11px
-	&:hover
-		background-color: darken($red, 5%)
-		transition: 0.2s ease-in
 	@media(min-width:576px)
 		font-size: 13px
 	a
